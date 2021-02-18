@@ -30,7 +30,7 @@ def std_insert (request,id=0):
 
 
 
-def std_delete (request, id):
+def std_delete (request,id):
     std=student.objects.get(pk=id)
     std.delete()
     return redirect('../show/')
